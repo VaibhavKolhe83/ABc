@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
+app.get('/home', (req, res) => {
+  res.send("this is home page");
+})
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
